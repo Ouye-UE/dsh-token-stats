@@ -19,6 +19,8 @@ Deploy once — it auto-loads on every DSH start. No approvals, no build step.
 
 ![dsh-token-stats panel](assets/panel.png)
 
+![dsh-token-stats window](assets/window.png)
+
 ## Features
 
 | Row | Answers | Data source |

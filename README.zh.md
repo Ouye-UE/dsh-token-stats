@@ -19,6 +19,8 @@
 
 ![dsh-token-stats 面板截图](assets/panel.png)
 
+![dsh-token-stats 窗口截图](assets/window.png)
+
 ## 功能
 
 | 行 | 回答 | 数据来源 |

@@ -26,14 +26,14 @@ Deploy once — it auto-loads on every DSH start. No approvals, no build step.
 | Row | Answers | Data source |
 | --- | --- | --- |
 | **Tokens** | How many tokens has this session consumed? | `tokenUsage` projection (live, per session) |
-| **缓存命中** | How much did the context cache save? | cache-read share of billed input |
-| **费用** | What did this session roughly cost? | per-request fold — each request priced by its own model × Beijing-time price period; hidden system calls (titles, compaction) folded into the total |
-| **余额** | How much money is left on the account? | official `GET /user/balance`, server-side API key |
-| **上下文** | How full is the context window? | `contextPressure` projection |
+| **Cache hit** | How much did the context cache save? | cache-read share of billed input |
+| **Cost** | What did this session roughly cost? | per-request fold — each request priced by its own model × Beijing-time price period; hidden system calls (titles, compaction) folded into the total |
+| **Balance** | How much money is left on the account? | official `GET /user/balance`, server-side API key |
+| **Context** | How full is the context window? | `contextPressure` projection |
 
 Highlights:
 
-- **Accurate mixed pricing** — usage is folded per `model × price period`. Flash tokens are priced at flash rates, pro tokens at pro rates, and each request is classified by its own timestamp (`current` price before the peak/off-peak scheme, `peak` 9–12/14–18 Beijing time, `offPeak` otherwise). Hover the 费用 row for the per-bucket breakdown.
+- **Accurate mixed pricing** — usage is folded per `model × price period`. Flash tokens are priced at flash rates, pro tokens at pro rates, and each request is classified by its own timestamp (`current` price before the peak/off-peak scheme, `peak` 9–12/14–18 Beijing time, `offPeak` otherwise). Hover the Cost row for the per-bucket breakdown.
 - **Real account balance** — queried from DeepSeek's official balance endpoint with the deployment's `DEEPSEEK_API_KEY`; the key never reaches the browser.
 - **No drift from the native stats** — Tokens / cache-hit / context figures come from Harness's own projections (the same source as the shipped stats line).
 

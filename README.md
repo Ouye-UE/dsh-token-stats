@@ -15,6 +15,10 @@ Deploy once — it auto-loads on every DSH start. No approvals, no build step.
 
 ## Panel
 
+![dsh-token-stats panel](assets/panel.png)
+
+Text preview of the same panel:
+
 ```
 Tokens    80.0M                ← live, compact K/M
 缓存命中  62%

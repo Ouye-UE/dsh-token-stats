@@ -15,6 +15,10 @@
 
 ## 面板
 
+![dsh-token-stats 面板截图](assets/panel.png)
+
+文本示意：
+
 ```
 Tokens    80.0M                ← 实时，紧凑 K/M
 缓存命中  62%

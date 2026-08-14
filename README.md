@@ -19,19 +19,6 @@ Deploy once — it auto-loads on every DSH start. No approvals, no build step.
 
 ![dsh-token-stats panel](assets/panel.png)
 
-Text preview of the same panel:
-
-```
-Tokens    80.0M                ← live, compact K/M
-缓存命中  62%
-费用      ¥3.98                ← hover: per-bucket breakdown (incl. system calls)
-余额      ¥88.50               ← hover: topped-up / granted split
-上下文    [████████░░]  62%    ← green/yellow/red by usage
-─────────────────────────────
-[Cordis plugins]
-[Settings]
-```
-
 ## Features
 
 | Row | Answers | Data source |

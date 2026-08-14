@@ -1,6 +1,6 @@
 [English](README.md) | **简体中文**
 
-![dsh-token-stats](assets/banner.png)
+![dsh-token-stats](assets/banner.jpg)
 
 <p align="center">
   <a href="LICENSE"><img alt="License: MIT" src="https://img.shields.io/badge/license-MIT-blue.svg"></a>

@@ -1,0 +1,43 @@
+{
+  "name": "dsh-token-stats",
+  "version": "1.0.0",
+  "description": "Sidebar token-stats panel for DeepSeek Harness: real-time session tokens, cache hit rate, mixed model×period cost estimate, real account balance, and context-occupancy bar. 侧边栏实时 Token 消耗面板（含真实余额与精确混合计价）。",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": {
+      "default": "./lib/index.js"
+    },
+    "./client": {
+      "default": "./lib/client.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ouye-UE/dsh-token-stats.git"
+  },
+  "dsh": {
+    "client": {
+      "platform": "web",
+      "inject": [
+        "@deepseek-ai/dsh-client-runtime",
+        "@deepseek-ai/dsh-client-ui-sidebar"
+      ]
+    }
+  },
+  "license": "MIT",
+  "keywords": [
+    "deepseek-harness",
+    "dsh",
+    "cordis",
+    "plugin",
+    "token",
+    "usage",
+    "balance",
+    "sidebar"
+  ]
+}

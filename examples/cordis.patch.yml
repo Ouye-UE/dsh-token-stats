@@ -1,0 +1,6 @@
+# 示例：把 dsh-token-stats 挂进 web profile（追加到 <DSH_HOME>/profiles/web/cordis.patch.yml）
+#
+# 前置：将本包放入 <DSH_HOME>/profiles/node_modules/dsh-token-stats/（含 package.json + lib/）
+- insert:
+    - id: token-stats
+      name: dsh-token-stats

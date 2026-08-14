@@ -19,7 +19,18 @@ Deploy once — it auto-loads on every DSH start. No approvals, no build step.
 
 ![dsh-token-stats panel](assets/panel.png)
 
+Text preview of the same panel:
 
+```
+Tokens    80.0M                ← live, compact K/M
+缓存命中  62%
+费用      ¥3.98                ← hover: per-bucket breakdown (incl. system calls)
+余额      ¥88.50               ← hover: topped-up / granted split
+上下文    [████████░░]  62%    ← green/yellow/red by usage
+─────────────────────────────
+[Cordis plugins]
+[Settings]
+```
 
 ## Features
 
@@ -27,8 +38,7 @@ Deploy once — it auto-loads on every DSH start. No approvals, no build step.
 | --- | --- | --- |
 | **Tokens** | How many tokens has this session consumed? | `tokenUsage` projection (live, per session) |
 | **缓存命中** | How much did the context cache save? | cache-read share of billed input |
-| **费用** | What did this session roughly cost? | per-request fold — each request priced by its own model × Beijing-time price period |
-| **系统调用** | Hidden LLM calls (titles, compaction) | `llm/stream` interceptor |
+| **费用** | What did this session roughly cost? | per-request fold — each request priced by its own model × Beijing-time price period; hidden system calls (titles, compaction) folded into the total |
 | **余额** | How much money is left on the account? | official `GET /user/balance`, server-side API key |
 | **上下文** | How full is the context window? | `contextPressure` projection |
 

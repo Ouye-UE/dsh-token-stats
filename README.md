@@ -1,3 +1,5 @@
+**English** | [简体中文](README.zh.md)
+
 ![dsh-token-stats](assets/banner.png)
 
 <p align="center">
